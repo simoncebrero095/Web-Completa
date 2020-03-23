@@ -1,0 +1,25 @@
+<h4>{{titulo}}</h4>
+<hr/>
+
+<div class = 'container-grid'>
+<div class="container d-flex justify-content-center"  *ngFor="let producto of products"> 
+    <div class="card container" style="width: 18rem;">
+      <img class="card-img-top" [src]="producto.imgURL">           
+        <h5 class="card-title">{{producto.name}}</h5>
+            <p class="card-text"> {{producto.description}} </p>
+            <a href="#" class="btn btn-primary">{{producto.precio}}</a>
+    </div>
+</div>
+</div>  
+
+
+
+
+
+
+
+
+
+
+
+
